@@ -1,0 +1,71 @@
+<p>demo works!</p>
+<!-- <div class="carousel-container1">
+    
+        <div class="carousel-inner" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'" [style.transition]="'transform 0.5s ease-in-out'">
+
+        <div class="carousel-item1" *ngFor="let product of products">
+        <div class="product-card1">
+          <img [src]="product.image" [alt]="product.name">
+          <div class="product-info1">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.inventoryStatus }}</p>
+            <p class="price1">{{ '$' + product.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control1 prev1" (click)="prevSlide()">&#10094;</button>
+    <button class="carousel-control1 next1" (click)="nextSlide()">&#10095;</button>
+  </div> -->
+  <!-- BEST
+  <div class="carousel-container1">
+    <button class="carousel-control1 prev" (click)="prevSlide()">&#10094;</button>
+    <div class="carousel-slides1">
+      <div
+        class="carousel-item1"
+        *ngFor="let product of products; let i = index"
+        [ngClass]="{ active: i === currentIndex }"
+      >
+        <div class="item-content1">
+          <img [src]="product.image" [alt]="product.name" />
+          <div class="product-details1">
+            <h3>{{ product.name }}</h3>
+            <p>\${{ product.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control1 next" (click)="nextSlide()">&#10095;</button>
+  </div> -->
+  <div class="carousel-container1">
+    <button class="carousel-control1 prev" (click)="prevSlide()">&#10094;</button>
+    <div class="carousel-slides1">
+      <div
+        class="carousel-item1"
+        *ngFor="let project of visibleProjects"
+      >
+        <div class="details-container1 color-container1">
+          <div class="article-container1">
+            <img [src]="project.image" [alt]="project.title" class="project-img1" />
+          </div>
+          <h2 class="experience-sub-title1 project-title1">{{ project.title }}</h2>
+          <div class="btn-container1">
+            <button
+              class="btn1 btn-color-21 project-btn1"
+              (click)="openLink(project.githubLink)"
+            >
+              Github
+            </button>
+            <button
+              class="btn1 btn-color-21 project-btn1"
+              (click)="openLink(project.demoLink)"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control1 next" (click)="nextSlide()">&#10095;</button>
+  </div>
+  

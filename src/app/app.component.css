@@ -1,0 +1,119 @@
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+a,
+.btn {
+  transition: all 400ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+.nav-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+
+}
+
+
+.nav-ham{
+  display: none;
+}
+
+.ham-menu {
+    position: relative;
+    display: inline-block;
+  }
+  .ham-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .ham-icon:hover{
+    color: grey;
+  }
+
+.menu-nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    list-style: none;
+    max-height: 300px;
+    margin-top: 20px;
+    padding: 15px;
+  }
+  
+  .menu-nav-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    
+  }
+
+  .menu-nav-links a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+  
+
+
+
+
+
+
+/*media query*/
+@media screen and (max-width:900px) {
+    .desk-nav{
+        display: none;
+    }
+    .nav-ham{
+      display: flex;
+    }
+    
+}
+

@@ -1,0 +1,40 @@
+<!-- first section of hompage / hero box -->
+<section class="profile">
+  <div class="section__pic-container">
+    <img src="assets/profilepic.png" alt="Waqar Ahmad profile picture" />
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Waqar Ahmad</h1>
+    <p class="section__text__p2">Frontend Developer</p>
+    <div class="button-container">
+      <button class="button button-color-2" (click)="downloadFile()">
+        Download CV
+      </button>
+      <button class="button button-color-1" [routerLink]="['/Contact']">
+        Contact Info
+      </button>
+    </div>
+    <div id="socials-container">
+        <a href="https://www.linkedin.com/in/waqar-ahmad-59075a252" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin-square fa-3x icon" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/waqarahmad30" target="_blank" rel="noopener noreferrer">  
+      <i class="fa fa-github fa-3x icon" aria-hidden="true"></i>
+          </a>
+    </div>
+  </div>
+</section>
+<!-- first section of hompage / hero box  -->
+ <!-- ends here -->
+
+<app-about-section></app-about-section>
+<app-skill-slider></app-skill-slider>
+
+<section class="project">
+  <div class="project-heading">
+  <p class="section__text__p1 section__text">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+  </div>
+    <app-project-section></app-project-section>
+</section>

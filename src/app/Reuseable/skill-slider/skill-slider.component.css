@@ -1,0 +1,53 @@
+.r {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+   
+  }
+  
+  .c {
+    flex: 0 0 20%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    
+  }
+  
+  .i {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5rem;
+  }
+
+  p {
+    color: rgb(85, 85, 85);
+    align-self: center;
+  text-align: center;
+  font-weight: 600;
+
+  }
+  
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+
+  }
+  p {
+    color: rgb(85, 85, 85);
+  }
+  .section__text__p1 {
+    text-align: center;
+    font-weight: 400;
+  }
+.skills{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+}

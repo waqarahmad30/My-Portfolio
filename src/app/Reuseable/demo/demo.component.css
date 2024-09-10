@@ -1,0 +1,328 @@
+/* Container for the entire carousel 
+.carousel-container1 {
+    position: relative;
+    width: 300px;
+    height: 360px;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Inner container that holds all the carousel items 
+  .carousel-inner1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Each item in the carousel 
+  .carousel-item1 {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Product card styling 
+  .product-card1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Image styling 
+  .product-card1 img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Product info styling 
+  .product-info1 h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+  
+  .product-info1 p {
+    margin: 0;
+  }
+  
+  .product-info1 .price1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Carousel control buttons 
+  .carousel-control1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+  }
+  
+  /* Position the previous button 
+  .carousel-control1.prev1 {
+    top: 10px;
+  }
+  
+  /* Position the next button 
+  .carousel-control1.next1 {
+    bottom: 10px;
+  }
+  
+  .carousel-control1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  */
+  /* Container for the entire carousel */
+/* .carousel-container1 {
+    position: relative;
+    width: 800px; /* Adjust the width based on your needs 
+    height: 300px; /* Adjust the height based on your needs 
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Inner container that holds all the carousel items 
+  .carousel-inner1 {
+    display: flex;
+    flex-direction: row; /* Change to row for horizontal alignment 
+    height: 100%;
+    transition: transform 0.5s ease-in-out; /* Ensure smooth transition 
+  }
+  
+  /* Each item in the carousel 
+  .carousel-item1 {
+    flex: 0 0 100%; /* Adjust width to take full width of the container 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Product card styling 
+  .product-card1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Image styling 
+  .product-card1 img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Product info styling 
+  .product-info1 h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+  
+  .product-info1 p {
+    margin: 0;
+  }
+  
+  .product-info1 .price1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Carousel control buttons 
+  .carousel-control1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+  }
+  
+  /* Position the previous button 
+  .carousel-control1.prev {
+    left: 10px;
+  }
+  
+  /* Position the next button 
+  .carousel-control1.next {
+    right: 10px;
+  }
+  
+  .carousel-control1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+   */
+/* best
+   .carousel-container1 {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel-slides1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item1 {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-item1.active {
+    display: flex;
+  }
+  
+  .item-content1 {
+    text-align: center;
+  }
+  
+  .item-content1 img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-details1 {
+    margin-top: 10px;
+  }
+  
+  .carousel-control1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-control1.prev {
+    left: 0;
+  }
+  
+  .carousel-control1.next {
+    right: 0;
+  } */
+
+  .carousel-container1 {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 4rem;
+  }
+  
+  .carousel-slides1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item1 {
+    min-width: 50%; /* To show two items at a time */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .carousel-control1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-control1.prev {
+    left: 0;
+  }
+  
+  .carousel-control1.next {
+    right: 0;
+  }
+  
+  /* Reuse provided CSS for the card design */
+  .btn-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn1 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+  
+  .btn-color-21 {
+    background: none;
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+  
+  .btn-color-21:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .details-container1 {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .project-img1 {
+    border-radius: 2rem;
+    width: 60%;
+    height: 60%;
+  }
+  
+  .project-title1 {
+    margin: 1rem;
+    color: black;
+  }
+  
+  .project-btn1 {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+  
+  

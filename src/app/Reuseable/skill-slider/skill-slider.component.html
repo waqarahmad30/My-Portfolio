@@ -1,0 +1,12 @@
+<section class="skills">
+<div>
+        <p class="section__text__p1">Uncover My Expertise</p>
+    <h1 class="title">My Expertise</h1>
+</div>
+<div class="r">
+    <div class="c" *ngFor="let img of images" >
+        <img class="i" src={{img.url}} alt={{img.title}}>
+        <p>{{img.title}}</p>
+    </div>
+</div>
+</section>

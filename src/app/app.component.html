@@ -1,0 +1,39 @@
+<!-- Navbar -->
+<nav class="desk-nav">
+  <div class="logo">
+    <a routerLink="Home">Waqar Ahmad</a>
+  </div>
+  <div>
+    <ul class="nav-links">
+      <li><a routerLink="Home">Home</a></li>
+      <li><a routerLink="About">About</a></li>
+      <li><a routerLink="Experience">Experience</a></li>
+      <li><a routerLink="Project">Project</a></li>
+      <li><a routerLink="Contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<nav class="nav-ham">
+  <div class="logo">
+    <a routerLink="Home">Waqar Ahmad</a>
+  </div>
+  <div class="ham-menu">
+    <div>
+      <i (click)="ham_toggle()" *ngIf="!ham_vissible" class="fa fa-bars fa-2x ham-icon" aria-hidden="true"></i>
+      <i (click)="ham_toggle()" *ngIf="ham_vissible"class="fa fa-times fa-2x ham-icon" aria-hidden="true"></i>
+    </div>
+    <div *ngIf="ham_vissible">
+      <ul class="menu-nav-links">
+        <li><a routerLink="Home" (click)="ham_toggle()">Home</a></li>
+        <li><a routerLink="About" (click)="ham_toggle()">About</a></li>
+        <li><a routerLink="Experience" (click)="ham_toggle()">Experience</a></li>
+        <li><a routerLink="Project" (click)="ham_toggle()">Project</a></li>
+        <li><a routerLink="Contact" (click)="ham_toggle()">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar -->
+
+<router-outlet></router-outlet>
