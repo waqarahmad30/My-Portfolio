@@ -1,0 +1,20 @@
+.color-p{
+    color: rgb(85, 85, 85);
+  }
+  .bg-clr{
+    background-color: rgb(181, 181, 181);
+  }
+  .title{
+    font-size: 3rem;
+  }
+  li a{
+    text-decoration:none;
+    font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+  }
+  li a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }

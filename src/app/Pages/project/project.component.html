@@ -1,1 +1,24 @@
-<p>project works!</p>
+<section class="project-page py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4" *ngFor="let project of projects">
+          <div class="card h-100">
+            <img [src]="project.image" class="card-img-top" alt="{{ project.title }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <a [href]="project.github" class="btn btn-outline-dark">GitHub</a>
+              <a [href]="project.liveDemo" class="btn btn-dark">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

@@ -14,20 +14,20 @@ export class ProjectSectionComponent implements OnInit, OnDestroy{
     {
       title: 'BillBoard',
       image: './assets/billboard.png',
-      githubLink: 'https://github.com/',
-      demoLink: 'https://github.com/'
+      githubLink: 'https://github.com/waqarahmad30/BillBoard',
+      demoLink: '#'
     },
     {
       title: 'CityLocal',
       image: './assets/citylocal.png',
-      githubLink: 'https://github.com/',
-      demoLink: 'https://github.com/'
+      githubLink: 'https://github.com/waqarahmad30/citylocal101',
+      demoLink: '#'
     },
     {
       title: 'Portfolio',
       image: './assets/portfolio.png',
-      githubLink: 'https://github.com/',
-      demoLink: 'https://github.com/'
+      githubLink: 'https://github.com/waqarahmad30/My-Portfolio',
+      demoLink: '#'
     },
     // Add more projects as needed
   ];

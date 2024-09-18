@@ -1,0 +1,49 @@
+.color-p{
+  color: rgb(85, 85, 85);
+}
+.title{
+  font-size: 3rem;
+}
+.s-70{
+    height: auto;
+    overflow: hidden;
+    
+}
+.pd-l-r-5{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.pd-t-b-2{
+  padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+li{margin: 1rem;}
+
+.image-box {
+    width: 100%;  /* or set a specific width, like 300px */
+    height: 400px;  /* Set a fixed height */
+    overflow: hidden;  /* Prevent the image from overflowing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;  /* Ensures the entire image fits within the container */
+    display: block;
+    padding: 10px;
+    border-radius: 2rem;
+  }
+
+  .edu-cards{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+  }
+  

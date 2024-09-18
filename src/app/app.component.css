@@ -1,5 +1,7 @@
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+p{
+  font-family: "Poppins", sans-serif;
+}
 a,
 .btn {
   transition: all 400ms ease;
@@ -98,6 +100,14 @@ nav {
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
+  }
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
   }
   
 
