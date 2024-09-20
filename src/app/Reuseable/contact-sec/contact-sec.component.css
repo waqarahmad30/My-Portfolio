@@ -1,0 +1,30 @@
+.border-detail {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    max-width: 300px;
+    width: 100%;     
+    white-space: normal; 
+    text-align: center; 
+    margin: 1rem auto;
+}
+.icon {
+    cursor: pointer; 
+    color: rgb(53, 53, 53);
+    padding: 5px;
+  }
+  .icon:hover{
+    border-color: black;
+    color: rgb(85, 85, 85);
+  }
+a {
+    color: black;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+a:hover {
+    color: grey;
+  }

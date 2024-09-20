@@ -102,8 +102,9 @@ nav {
     text-decoration-color: rgb(181, 181, 181);
   }
   footer {
-    height: 26vh;
-    margin: 0 1rem;
+    margin-bottom: 0;
+background-color: rgba(234, 234, 234, 0.491);
+padding: 3rem;
   }
   
   footer p {
@@ -112,7 +113,8 @@ nav {
   
 
 
-
+/**/
+/**/
 
 
 
@@ -126,4 +128,3 @@ nav {
     }
     
 }
-

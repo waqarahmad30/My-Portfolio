@@ -1,4 +1,4 @@
-<div class="carousel-container1">
+<!-- <div class="carousel-container1">
   <button class="carousel-control1 prev" (click)="prevSlide()">&#10094;</button>
   <div class="carousel-slides1">
     <div
@@ -27,5 +27,32 @@
       </div>
     </div>
   </div>
+  <button class="carousel-control1 next" (click)="nextSlide()">&#10095;</button>
+</div> -->
+<div class="carousel-container1">
+  <!-- Previous Slide Button -->
+  <button class="carousel-control1 prev" (click)="prevSlide()">&#10094;</button>
+
+  <!-- Carousel Slides -->
+  <div class="carousel-slides1">
+    <div class="carousel-item1" *ngFor="let project of projects; let i = index" [class.active]="i === currentIndex">
+      <div class="details-container1 color-container1">
+        <div class="article-container1">
+          <img [src]="project.image" [alt]="project.title" class="project-img1 img-fluid" />
+        </div>
+        <h2 class="experience-sub-title1 project-title1 text-center pt-3">{{ project.title }}</h2>
+        <div class="btn-container1 text-center">
+          <button class="button-color-1 button m-1" (click)="openLink(project.githubLink)">
+            Github
+          </button>
+          <button class="button-color-2 button m-1" (click)="openLink(project.demoLink)">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next Slide Button -->
   <button class="carousel-control1 next" (click)="nextSlide()">&#10095;</button>
 </div>

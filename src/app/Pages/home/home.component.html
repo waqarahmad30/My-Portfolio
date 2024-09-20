@@ -1,76 +1,74 @@
 <!-- first section of hompage / hero box -->
-<section class="profile">
-  <div class="section__pic-container">
-    <img src="assets/profilepic.png" alt="Waqar Ahmad profile picture" />
-  </div>
-  <div class="section__text">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h1 class="title">Waqar Ahmad</h1>
-    <p class="section__text__p2">Frontend Developer</p>
-    <div class="button-container">
-      <button class="button button-color-2" (click)="downloadFile()">
-        Download CV
-      </button>
-      <button class="button button-color-1" [routerLink]="['/Contact']">
-        Contact Info
-      </button>
+<section class="container">
+  <div class="row text-center align-items-center p-5">
+    <div class="col-md-6 pic-container p-4">
+      <div class="section__pic-container">
+        <img src="assets/profilepic.png" alt="Waqar Ahmad profile picture" />
+      </div>
     </div>
-    <div id="socials-container">
-        <a href="https://www.linkedin.com/in/waqar-ahmad-59075a252" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-linkedin-square fa-3x icon" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/waqarahmad30" target="_blank" rel="noopener noreferrer">  
-      <i class="fa fa-github fa-3x icon" aria-hidden="true"></i>
-          </a>
+
+    <div class="col-md-6 p-4">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Waqar Ahmad</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="row justify-content-center">
+        <div class="col">
+          <button class="button button-color-2 m-2" (click)="downloadFile()">
+            Download CV
+          </button>
+          <button class="button button-color-1 m-2" [routerLink]="['/Contact']">
+            Contact Info
+          </button>
+        </div>
+      </div>
+
+      <a
+        href="https://www.linkedin.com/in/waqar-ahmad-59075a252"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-linkedin-square fa-3x icon m-2" aria-hidden="true"></i>
+      </a>
+      <a
+        href="https://github.com/waqarahmad30"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-github fa-3x icon m-2" aria-hidden="true"></i>
+      </a>
     </div>
   </div>
-</section>
- <!-- ends here -->
-
-
-
-<!-- 2nd  section of hompage / About me  -->
-<app-about-section></app-about-section>
- <!-- ends here -->
-
-
-  <!-- 3rd section of hompage / skills  -->
-<app-skill-slider></app-skill-slider>
- <!-- ends here -->
-
-
-
-<!-- 4th section of hompage / projects  -->
-<section class="project">
-  <div class="project-heading">
-  <p class="section__text__p1 section__text">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-  </div>
-    <app-project-section></app-project-section>
 </section>
 <!-- ends here -->
 
+<!-- 2nd  section of hompage / About me  -->
+ <section class="container m-t-b">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <app-about-section/>
+ </section>
+<!-- ends here -->
+
+<!-- 3rd section of hompage / skills  -->
+<section class="container m-t-b">
+  <p class="section__text__p1">Uncover My Expertise</p>
+  <h1 class="title pb-3">My Expertise</h1>
+  <app-skill-slider/>
+ </section>
+<!-- ends here -->
+
+<!-- 4th section of hompage / projects  -->
+<section class="container m-t-b">
+  <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title pb-3">Projects</h1>
+    <app-project-section/>
+</section>
+<!-- ends here -->
 
 <!-- 5th section of hompage / contact  -->
-<section class="contact-section">
+<section class="container m-t-b">
   <p class="section__text__p1">Get in Touch</p>
-  <h1 class="title">Contact Me</h1>
-  <div class="d-flex justify-content-center mb-3">
-    <div class="d-flex contact-div-col">
-      <div class="exa">
-        <a href="mailto:wa.ahmad1999@gmail.com">
-          <i class="icon contact-icon email-icon fa fa-envelope fa-1x"></i>
-          <span>Waqar's Mail</span>
-        </a>
-      </div>
-      <div class="exa">
-        <a href="https://www.linkedin.com/in/waqar-ahmad-59075a252" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-linkedin-square fa-1x icon contact-icon"></i>
-          <span>LinkedIn</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  
+  <h1 class="title pb-3">Contact Me</h1>
+  <app-contact-sec/>
 </section>
- <!-- ends here -->
+<!-- ends here -->

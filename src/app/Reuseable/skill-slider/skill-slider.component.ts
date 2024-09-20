@@ -13,6 +13,7 @@ export class SkillSliderComponent{
   images = [
     {url:"assets/html.png",title:"HTML"},
     {url:"assets/css.png",title:"CSS"},
+    {url:"assets/bootstrap.png",title:"BootStrap"},
     {url:"assets/javaScript.png",title:"JavaScript"},
     {url:"assets/typeScript.png",title:"TypeScript"},
     {url:"assets/c++.png",title:"C++"},
@@ -20,6 +21,7 @@ export class SkillSliderComponent{
     {url:"assets/python.png",title:"Python"},
     {url:"assets/.net.png",title:".NET MVC"},
     {url:"assets/angular.png",title:"Angular"},
+    {url:"assets/wordpress.png",title:"Wordpress"},
     {url:"assets/studio.png",title:"Visual Studio"}
 
 

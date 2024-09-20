@@ -4,11 +4,12 @@ import { AboutSectionComponent } from '../../Reuseable/about-section/about-secti
 import { SkillSliderComponent } from '../../Reuseable/skill-slider/skill-slider.component';
 import { ProjectSectionComponent } from '../../Reuseable/project-section/project-section.component';
 import { DemoComponent } from '../../Reuseable/demo/demo.component';
+import { ContactSecComponent } from '../../Reuseable/contact-sec/contact-sec.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink,RouterOutlet,AboutSectionComponent,SkillSliderComponent,ProjectSectionComponent,DemoComponent],
+  imports: [RouterLink,RouterOutlet,AboutSectionComponent,SkillSliderComponent,ProjectSectionComponent,DemoComponent,ContactSecComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

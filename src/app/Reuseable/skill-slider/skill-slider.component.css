@@ -28,7 +28,7 @@
     color: rgb(85, 85, 85);
     align-self: center;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 
   }
   
@@ -50,4 +50,14 @@
   padding-right: 3rem;
   padding-top: 5rem;
   padding-bottom: 0rem;
+}
+.skill-detail {
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);   
+  white-space: normal; 
+  text-align: center;
+}
+p {
+  color: rgb(85, 85, 85);
 }

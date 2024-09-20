@@ -1,24 +1,52 @@
 <section class="project-page py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4" *ngFor="let project of projects">
-          <div class="card h-100">
-            <img [src]="project.image" class="card-img-top" alt="{{ project.title }}">
-            <div class="card-body">
-              <h5 class="card-title">{{ project.title }}</h5>
-              <p class="card-text">{{ project.description }}</p>
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-12 mb-5" *ngFor="let project of projects">
+        <div class="card project-detail-card">
+          <div class="row g-0">
+            <!-- Project Images Carousel -->
+            <div class="col-md-6">
+              <div id="carousel{{ project.id }}" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item" *ngFor="let image of project.images; let i = index" [ngClass]="{'active': i === 0}">
+                    <img [src]="image" class="d-block w-100" alt="{{ project.title }}">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel' + project.id" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel' + project.id" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                
+              </div>
             </div>
-            <div class="card-footer d-flex justify-content-between">
-              <a [href]="project.github" class="btn btn-outline-dark">GitHub</a>
-              <a [href]="project.liveDemo" class="btn btn-dark">Live Demo</a>
+
+            <!-- Project Details -->
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" *ngFor="let feature of project.features">{{ feature }}</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-between mt-4">
+                  <a [href]="project.github" class="btn btn-outline-dark">GitHub</a>
+                  <a [href]="project.liveDemo" class="btn btn-dark">Live Demo</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>

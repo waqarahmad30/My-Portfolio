@@ -1,33 +1,29 @@
-<section class="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img
-          src="assets/waqar1.webp"
-          alt="Profile picture"
-          class="about-pic"
-        />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <i class="fa fa-certificate fa-3x icon" aria-hidden="true"></i>
-            <h3>Experience</h3>
-            <p>1+ years <br />Frontend Development</p>
-          </div>
-          <div class="details-container">
-            <i class="fa fa-graduation-cap fa-3x icon" aria-hidden="true"></i>
-            <h3>Education</h3>
-            <p>Bachelor of Computer Science<br />University of Central Punjab</p>
-          </div>
+<div class="row pt-2">
+  <div class="col-lg-5 pic-container p-4">
+    <div class="section__pic-container">
+      <img src="assets/waqar1.webp" alt="Profile picture" class="img-fluid" style="border-radius: 2rem;" />
+    </div>
+  </div>
+  <div class="col-lg-7 p-4 text-center">
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <div class="about-detail">
+          <i class="fa fa-certificate fa-3x icon" aria-hidden="true"></i>
+          <h3>Experience</h3>
+          <p>1+ years <br />Frontend Development</p>
         </div>
-        <div class="text-container">
-          <p>
-            As a BSCS graduate from the University of Central Punjab (UCP), I have a solid foundation in web development, with hands-on experience in WordPress and the MVC framework. My Final Year Project focused on computer vision, demonstrating my ability to tackle real-world challenges. I'm eager to contribute to innovative tech projects and further expand my expertise.
-          </p>
-          <button class="button button-color-2">Know More</button>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="about-detail">
+          <i class="fa fa-graduation-cap fa-3x icon" aria-hidden="true"></i>
+          <h3>Education</h3>
+          <p>Bachelor of Computer Science<br />University of Central Punjab</p>
         </div>
       </div>
     </div>
-  </section>
+    <p>
+      As a BSCS graduate from the University of Central Punjab (UCP), I have a solid foundation in web development, with hands-on experience in WordPress and the MVC framework. My Final Year Project focused on computer vision, demonstrating my ability to tackle real-world challenges. I'm eager to contribute to innovative tech projects and further expand my expertise.
+    </p>
+    <button class="button button-color-2" [routerLink]="['/About']">Know More</button>
+  </div>
+</div>

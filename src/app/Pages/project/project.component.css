@@ -1,34 +1,38 @@
-.project-page {
-    background-color: #f9f9f9;
-  }
-  
-  .card {
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 1.5rem;
-    text-align: center;
-  }
-  
-  .card-title {
-    font-size: 1.25rem;
-    color: #333;
-  }
-  
-  .card-text {
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .card-footer {
-    background-color: #fff;
-    border-top: none;
-  }
-  
+.project-detail-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+  color: #555;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+}
