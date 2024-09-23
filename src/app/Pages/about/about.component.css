@@ -1,4 +1,4 @@
-.color-p{
+/* .color-p{
   color: rgb(85, 85, 85);
 }
 .title{
@@ -20,10 +20,9 @@
 li{margin: 1rem;}
 
 .image-box {
-    width: 100%;  /* or set a specific width, like 300px */
-    height: 400px;  /* Set a fixed height */
-    overflow: hidden;  /* Prevent the image from overflowing */
-    display: flex;
+    width: 100%;  /* or set a specific width, like 300px 
+    height: 400px;  /* Set a fixed height
+    overflow: hidden;  
     justify-content: center;
     align-items: center;
 
@@ -32,7 +31,7 @@ li{margin: 1rem;}
   .image-box img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;  /* Ensures the entire image fits within the container */
+    object-fit: contain;  
     display: block;
     padding: 10px;
     border-radius: 2rem;
@@ -46,4 +45,82 @@ li{margin: 1rem;}
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
   }
-  
+  @media screen and (max-width:768px) {
+    .section__pic-container {
+      height: 300px;
+    }
+    .section__text__p2 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .title {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .m-t-b{
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  @media screen and (max-width:375px) {
+    .section__pic-container {
+      height: 250px;
+    }
+    .m-t-b{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  } */
+   /*after bootstrap*/
+
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-detail {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    width: 100%;    
+    white-space: normal; 
+    text-align: center; 
+    margin: 1rem auto;
+}
+.minHeight{
+  min-height: 27rem;
+}
+.color-p{
+  color: rgb(85, 85, 85);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .minHeight{
+      min-height: 31rem;
+    }
+}
+@media (max-width: 768px) {
+  .section__pic-container {
+      height: 400px; /* Adjusts height for smaller screens */
+  }
+
+  .about-detail {
+      max-width: 100%; /* Allows full width on smaller screens */
+  }
+  .minHeight{
+    min-height: 40rem;
+  }
+}
+@media (max-width: 425px) {
+  .section__pic-container {
+      height: auto; /* Adjusts height for smaller screens */
+  }
+}

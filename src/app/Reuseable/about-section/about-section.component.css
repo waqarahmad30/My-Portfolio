@@ -54,8 +54,6 @@
 .button-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid !important;
 }
-p {
-  color: rgb(85, 85, 85);}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
