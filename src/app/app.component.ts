@@ -19,4 +19,19 @@ export class AppComponent {
   {
     this.ham_vissible = !this.ham_vissible;
   }
+
+  isDarkMode = false;
+
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle('dark-mode', this.isDarkMode);
+  }
+
+  // mode: boolean = false; // False by default (light mode)
+
+  // toggleDarkMode() {
+  //   this.mode = !this.mode; // Toggle mode
+  //   const event = new CustomEvent('toggleDarkMode', { detail: { isDarkMode: this.mode } });
+  //   window.dispatchEvent(event);
+  
 }

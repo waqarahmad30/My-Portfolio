@@ -6,7 +6,6 @@ a,
 .btn {
   transition: all 400ms ease;
 }
-
 /* DESKTOP NAV */
 
 nav,
@@ -127,4 +126,25 @@ padding: 3rem;
       display: flex;
     }
     
+}
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #BB86FC; /* Button color */
+  color: #121212; /* Icon color */
+  border: none;
+  border-radius: 50%; /* Make it round */
+  width: 50px; /* Button size */
+  height: 50px; /* Button size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #6200EE; /* Darker shade on hover */
 }
