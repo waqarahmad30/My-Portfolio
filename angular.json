@@ -32,8 +32,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
 
               
-            ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+            ]
+            
           },
           "configurations": {
             "production": {
@@ -41,11 +41,11 @@
                 {
                   "type": "initial",
                   "maximumWarning": "700kB",
-                  "maximumError": "3MB"
+                  "maximumError": "900kb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kB",
+                  "maximumWarning": "8kB",
                   "maximumError": "12kB"
                 }
               ],
