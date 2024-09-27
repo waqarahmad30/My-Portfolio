@@ -16,7 +16,7 @@
     </ul>
   </div>
 </nav>
-<nav class="nav-ham">
+<!-- <nav class="nav-ham">
   <div class="logo">
     <a routerLink="Home">Waqar Ahmad</a>
   </div>
@@ -34,11 +34,31 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
+<!-- mobile view navbar -->
+ <section class="container mbl align-content-center">
+  <div class="row mbl-upper">
+    <div class="col-10 title text-start">
+      <a routerLink="Home">Waqar Ahmad</a>
+    </div>
+    <div class="col-2 align-content-center">
+      <i (click)="ham_toggle()" *ngIf="!ham_vissible" class="fa fa-bars fa-2x ham-icon" aria-hidden="true"></i>
+      <i (click)="ham_toggle()" *ngIf="ham_vissible"class="fa fa-times fa-2x ham-icon" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div *ngIf="ham_vissible"class="col-12 mbl-nav align-content-center" >
+      <ul class="">
+        <li><a routerLink="Home" (click)="ham_toggle()">Home</a></li>
+        <li><a routerLink="About" (click)="ham_toggle()">About</a></li>
+        <li><a routerLink="Project" (click)="ham_toggle()">Project</a></li>
+        <li><a routerLink="Contact" (click)="ham_toggle()">Contact</a></li>
+      </ul>
+  </div>
+</section>
 
 <!-- Navbar header-->
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 
 
 <!-- Navbar footer -->

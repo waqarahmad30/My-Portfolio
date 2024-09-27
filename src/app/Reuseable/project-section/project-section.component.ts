@@ -122,4 +122,3 @@ export class ProjectSectionComponent implements OnInit, OnDestroy {
     }
   }
 }
-

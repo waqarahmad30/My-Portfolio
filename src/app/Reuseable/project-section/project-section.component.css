@@ -14,9 +14,14 @@
 }
 
 .carousel-item1 {
-  flex: 0 0 100%; /* Occupies 100% of the width */
+  flex: 0 0 30%; /* Occupies 100% of the width */
   display: none; /* Hide all items by default */
   transition: opacity 0.5s ease-in-out; /* Smooth transition between slides */
+  background-color: rgba(234, 234, 234, 0.491);
+  border: 0.1rem solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .carousel-item1.active {
@@ -41,9 +46,9 @@
   margin-top: 15px;
 }
 button {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   transition: all 300ms ease !important;
-  padding: 1rem !important;
+  padding: 0.5rem !important;
   border-radius: 2rem !important;
 }
 
@@ -73,4 +78,32 @@ button {
 
 .button-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid !important;
+}
+@media screen and (max-width:1024px) {
+  .slide-1{
+    flex: 0 0 45%; /* Occupies 100% of the width */
+  display: none;
+
+  }
+  .slide-2{
+    flex: 0 0 45%; /* Occupies 100% of the width */
+    display: none;
+  }
+  .slide-3{
+display: none;
+  }
+
+}
+@media screen and (max-width:768px) {
+  .slide-1{
+    flex: 0 0 90%;
+  display: none;
+
+  }
+  .slide-2{
+    display: none;
+  }
+  .slide-3{
+display: none;
+  }
 }

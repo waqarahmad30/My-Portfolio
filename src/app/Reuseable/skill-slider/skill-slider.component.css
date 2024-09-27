@@ -22,6 +22,10 @@
     height: auto;
     display: block;
     border-radius: 5rem;
+    transition: transform 0.5s ease;
+  }
+  .i:hover{
+    transform: scale(1.2);
   }
 
   p {

@@ -6,6 +6,10 @@
     justify-content: center !important;
 
   }
+  .img-boder{
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 13rem;
+  }
   .section__pic-container {
     display: flex !important;
     justify-content: center !important;

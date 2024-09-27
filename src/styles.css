@@ -8,7 +8,7 @@
 }
 /*dark mode */
 .dark-mode {
-  background-color: #121212;
+  background-color: #121212 !important;
   color: #E0E0E0;
 }
 .dark-mode .color-p{
@@ -50,6 +50,15 @@
 
 .dark-mode .nav {
   background-color: #181818 !important;
+}
+.dark-mode .mbl{
+  background-color: #181818 !important;
+}
+.dark-mode .mbl-nav{
+  background-color: #181818 !important;
+}
+.dark-mode .mbl a{
+  color: #BB86FC !important;
 }
 
 .dark-mode .nav-links a {
