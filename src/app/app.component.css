@@ -111,9 +111,12 @@ nav {
   }
  
    .mbl-nav{
-    text-align: center;
+    position: fixed;
+    z-index: 2;
     background-color: white;
     height: 80vh;
+    right: 0%;
+    width: 100%;
       }
   /* .mbl-nav {
     text-align: center;
@@ -138,7 +141,7 @@ nav {
   .mbl-nav ul{
   
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     list-style: none;
     }
   .mbl-nav li{
