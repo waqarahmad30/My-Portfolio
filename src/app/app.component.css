@@ -110,11 +110,27 @@ nav {
     z-index: 1;
   }
  
-  .mbl-nav{
+   .mbl-nav{
     text-align: center;
     background-color: white;
-    height: 20rem;
+    height: 80vh;
+      }
+  /* .mbl-nav {
+    text-align: center;
+    background-color: white;
+    height: 80vh;
+    position: fixed; 
+    top: 0;
+    right: -100%; 
+    width: 100%;
+    transition: transform 0.5s ease-in-out !important; 
+    z-index: 1000;
   }
+  
+  .mbl-nav.active {
+    transform: translateX(-100%); 
+  } */
+  
   .title a{
     text-decoration: none;
     color: black;

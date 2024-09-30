@@ -46,14 +46,16 @@
       <i (click)="ham_toggle()" *ngIf="ham_vissible"class="fa fa-times fa-2x ham-icon" aria-hidden="true"></i>
     </div>
   </div>
+</section>
+<section class="container-fluid">
   <div *ngIf="ham_vissible"class="col-12 mbl-nav align-content-center" >
-      <ul class="">
-        <li><a routerLink="Home" (click)="ham_toggle()">Home</a></li>
-        <li><a routerLink="About" (click)="ham_toggle()">About</a></li>
-        <li><a routerLink="Project" (click)="ham_toggle()">Project</a></li>
-        <li><a routerLink="Contact" (click)="ham_toggle()">Contact</a></li>
-      </ul>
-  </div>
+    <ul class="">
+      <li><a routerLink="Home" (click)="ham_toggle()">Home</a></li>
+      <li><a routerLink="About" (click)="ham_toggle()">About</a></li>
+      <li><a routerLink="Project" (click)="ham_toggle()">Project</a></li>
+      <li><a routerLink="Contact" (click)="ham_toggle()">Contact</a></li>
+    </ul>
+</div>
 </section>
 
 <!-- Navbar header-->

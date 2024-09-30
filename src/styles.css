@@ -57,6 +57,9 @@
 .dark-mode .mbl-nav{
   background-color: #181818 !important;
 }
+.dark-mode .mbl-nav a{
+  color: #BB86FC !important;
+}
 .dark-mode .mbl a{
   color: #BB86FC !important;
 }
