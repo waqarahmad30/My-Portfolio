@@ -68,38 +68,6 @@ nav {
     color: grey;
   }
 
-/* .menu-nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-    list-style: none;
-    max-height: 300px;
-    margin-top: 20px;
-    padding: 15px;
-  }
-  
-  .menu-nav-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-    
-  }
-
-  .menu-nav-links a:hover{
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-  } */
   .mbl{
     height: 17vh;
     align-content: center;
@@ -110,71 +78,24 @@ nav {
     z-index: 1;
   }
  
-   /* .mbl-nav{
-    position: fixed;
-    z-index: 2;
-    background-color: white;
-    height: 80vh;
-    right: 0%;
-    width: 100%;
-      } */
-  /* .mbl-nav {
-    text-align: center;
-    background-color: white;
-    height: 80vh;
-    position: fixed; 
-    top: 0;
-    right: -100%; 
-    width: 100%;
-    transition: transform 0.5s ease-in-out !important; 
-    z-index: 1000;
-  }
-  
-  .mbl-nav.active {
-    transform: translateX(-100%); 
-  } */
-  
   .title a{
     text-decoration: none;
     color: black;
   }
-  /* .mbl-nav ul{
-  
-    font-weight: 400;
-    font-size: 3rem;
-    list-style: none;
-    }
-  .mbl-nav li{
-    margin: 1rem;
-  }
-  .mbl-nav a {
-    padding: 10px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-  }
-  .mbl-nav a:hover{
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-  } */
   .mbl-nav {
     text-align: center;
     background-color: white;
-    height: 80vh;
-    width: 60vw; /* Adjust as needed */
+    height: 83vh;
+    width: 60vw;
     position: fixed;
-    top: 20%;
-    right: -300px; /* Initially hide off-screen to the right */
+    top: 17%;
+    right: -300px;
     transition: transform 0.5s ease-in-out;
-    z-index: 2; /* Ensure it stays on top */
+    z-index: 2;
   }
   
   .mbl-nav.active {
-    transform: translateX(-300px); /* Slide into view */
+    transform: translateX(-300px);
   }
   
   .mbl-nav ul {
@@ -228,20 +149,21 @@ padding: 3rem;
   position: fixed;
   bottom: 20px;
   left: 3%;
-  background-color: #BB86FC; /* Button color */
-  color: #121212; /* Icon color */
+  background-color: #BB86FC; 
+  color: #121212; 
   border: none;
-  border-radius: 50%; /* Make it round */
-  width: 50px; /* Button size */
-  height: 50px; /* Button size */
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  z-index: 5;
 }
 
 .dark-mode-toggle:hover {
-  background-color: #6200EE; /* Darker shade on hover */
+  background-color: #6200EE;
 }
