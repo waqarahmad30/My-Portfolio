@@ -89,13 +89,13 @@ nav {
     width: 60vw;
     position: fixed;
     top: 17%;
-    right: -300px;
+    right: -450px;
     transition: transform 0.5s ease-in-out;
     z-index: 2;
   }
   
   .mbl-nav.active {
-    transform: translateX(-300px);
+    transform: translateX(-450px);
   }
   
   .mbl-nav ul {
@@ -144,6 +144,11 @@ padding: 3rem;
       display: block;
     }
     
+}
+@media (min-width: 900px) {
+  .mbl-nav {
+    display: none; /* Hide on larger screens */
+  }
 }
 .dark-mode-toggle {
   position: fixed;
